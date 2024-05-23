@@ -1,15 +1,17 @@
-const express = require('express')
-const dotenv=require('dotenv').config()
-const {errorHandler}=require('./middleware/errorMiddleware')
-const port =process.env.PORT || 5000
+import express from 'express';
+import dotenv from 'dotenv';
+import authRoute from "./routes/auth.route.js";
 
-const app=express()
 
-app.use(express.json())
-app.use(express.urlencoded({extended: false}))
+dotenv.config();
 
-//add routes here
+const port = process.env.PORT || 5000;
+const app = express();
 
-app.use(errorHandler)
+app.use(express.json());
+app.use("/api/auth",authRoute)
 
-app.listen(port,()=> console.log(`Server started on port ${port}`))
+
+
+
+app.listen(port, () => console.log(`Server started on port ${port}`));
