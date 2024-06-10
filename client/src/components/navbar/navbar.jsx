@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const user = false;
+  const user = true;
   return (
     <nav>
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />
-          <span>Real Estate</span>
+          <span>Dream Homes</span>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
