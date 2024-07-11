@@ -1,21 +1,23 @@
-import Navbar from "./components/navbar/navbar.jsx"
 import Homepage from "./pages/homepage/homepage.jsx"
-import './layout/layout.scss'
+import Layout from './pages/layout/layout.jsx'
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 function App() {
-  return (
-    <div className="layout">
-     
-      <div className="navbar">
-      <Navbar/>
-      </div>
 
-      <div className="content">
-        <Homepage/>
-      </div>
-      
-    </div>
-  )
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Homepage />,
+        },
+      ]
+    }
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App
