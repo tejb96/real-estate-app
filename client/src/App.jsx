@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar/navbar.jsx"
-import HomePage from "./pages/homePage.jsx"
+import Homepage from "./pages/homepage/homepage.jsx"
 import './layout/layout.scss'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       </div>
 
       <div className="content">
-        <HomePage/>
+        <Homepage/>
       </div>
       
     </div>
