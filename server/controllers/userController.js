@@ -1,7 +1,7 @@
 import User from '../models/User.js';
 import Post from '../models/Post.js';
 import SavedPost from '../models/SavedPost.js';
-import mongoose from 'mongoose';
+
 
 // Get all users
 export const getUsers = async (req, res) => {
