@@ -1,2 +1,9 @@
-import { useContext, useState }   from "react";
-import {Link, useNavigate} from "react-router-dom";
+import './login.scss'
+
+function Login(){
+  return (
+    <div className='login'>Login</div>
+  )
+}
+
+export default Login

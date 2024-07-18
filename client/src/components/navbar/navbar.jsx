@@ -33,7 +33,7 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
+            <a href="/login">Sign in</a>
             <a href="/" className="register">
               Sign up
             </a>

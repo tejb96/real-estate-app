@@ -1,11 +1,10 @@
 import './homepage.scss';
-import {useContext} from "react";
 import SearchBar from '../../components/searchBar/searchBar.jsx';
 
 
 function Homepage(){
   return (
-    <div className='homepage'>
+    <div className='homePage'>
         <div className='textContainer'>
             <div className='wrapper'>
                 <h1 className='title'>
@@ -35,7 +34,7 @@ function Homepage(){
             <img src="/bg.png" alt="" />
         </div>
     </div>
-  )
+  );
 }
 
 export default Homepage
